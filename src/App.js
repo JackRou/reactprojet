@@ -43,7 +43,7 @@ function App() {
       setData(modifiedData);
     };
 
-    // fetchData();
+    fetchData();
   }, []);
 
   return (

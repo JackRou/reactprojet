@@ -28,10 +28,13 @@ const Characters = (props) => {
   // le tableau de data est props.data
 
   return (
-    <div className="CharactersContainer">
-      {props.data.map((Character) => {
-        return <Card name={Character.name} imageUrl={Character.url} />;
-      })}
+    <div className="BigCharactersContainer">
+      <div className="CharactersContainer">
+        {props.data.map((Character) => {
+          console.log(Character);
+          return <Card name={Character.name} imageUrl={Character.image} />;
+        })}
+      </div>
     </div>
   );
 };
